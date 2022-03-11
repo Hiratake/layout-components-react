@@ -75,8 +75,8 @@
     "build": "tsc && vite build",
     "dev": "vite",
     "lint": "npm run lint:script & npm run lint:style",
-    "lint:script": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:style": "stylelint \"**/*.{css,jsx,tsx}\"",
+    "lint:script": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",
+    "lint:style": "stylelint \"**/*.{css,jsx,tsx}\" --ignore-path .gitignore",
     "format": "prettier \"**/*.{js,jsx,ts,tsx,css,json}\" --write"
   }
 }

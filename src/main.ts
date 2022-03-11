@@ -1,3 +1,3 @@
-// main
+export { LProvider } from './components/LProvider'
 
-export {}
+export type { LayoutProviderProps } from './components/LProvider'
