@@ -8,7 +8,7 @@ import { css, Global } from '@emotion/react'
 // ----------------------------------------
 
 export type LayoutProviderProps = {
-  /** Children */
+  /** Content of the component. */
   children?: ReactNode
 }
 
