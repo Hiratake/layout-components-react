@@ -58,6 +58,7 @@
     "lint-staged": "12.3.5",
     "postcss-jsx": "0.36.4",
     "prettier": "2.5.1",
+    "rimraf": "3.0.2",
     "stylelint": "14.5.3",
     "stylelint-config-prettier": "9.0.3",
     "stylelint-config-recess-order": "3.0.0",
@@ -68,6 +69,8 @@
   },
   "scripts": {
     "prepare": "husky install",
+    "prebuild": "rimraf dist",
+    "postbuild": "rimraf dist/types/view",
     "build": "tsc && vite build",
     "dev": "vite",
     "lint": "npm run lint:script & npm run lint:style",
