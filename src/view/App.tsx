@@ -1,6 +1,6 @@
 // App
 
-import { LBox, LProvider, LStack } from '../main'
+import { LBox, LCenter, LProvider, LStack } from '../main'
 
 // ----------------------------------------
 // JSX
@@ -9,17 +9,19 @@ import { LBox, LProvider, LStack } from '../main'
 export const App = () => {
   return (
     <LProvider>
-      <LStack space="40px">
-        <LBox backgroundColor="#ddd" padding="16px">
-          Box01
-        </LBox>
-        <LBox backgroundColor="#ddd" padding="16px">
-          Box02
-        </LBox>
-        <LBox backgroundColor="#ddd" padding="16px">
-          Box03
-        </LBox>
-      </LStack>
+      <LCenter max="1200px" gutters="24px">
+        <LStack space="40px">
+          <LBox backgroundColor="#ddd" padding="16px">
+            Box01
+          </LBox>
+          <LBox backgroundColor="#ddd" padding="16px">
+            Box02
+          </LBox>
+          <LBox backgroundColor="#ddd" padding="16px">
+            Box03
+          </LBox>
+        </LStack>
+      </LCenter>
     </LProvider>
   )
 }
