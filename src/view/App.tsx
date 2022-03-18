@@ -1,6 +1,14 @@
 // App
 
-import { LBox, LCenter, LCluster, LProvider, LSidebar, LStack } from '../main'
+import {
+  LBox,
+  LCenter,
+  LCluster,
+  LProvider,
+  LSidebar,
+  LStack,
+  LSwitcher,
+} from '../main'
 
 // ----------------------------------------
 // JSX
@@ -17,7 +25,7 @@ export const App = () => {
             align="center"
             space="16px"
           >
-            <LBox>LOGO</LBox>
+            <LBox>Layout Components</LBox>
             <LCluster tag="nav" space="8px">
               {(() => {
                 const boxes = []
@@ -59,15 +67,17 @@ export const App = () => {
             </LStack>
 
             <LStack space="40px">
-              <LBox backgroundColor="#ddd" padding="16px">
-                Box01
-              </LBox>
-              <LBox backgroundColor="#ddd" padding="16px">
-                Box02
-              </LBox>
-              <LBox backgroundColor="#ddd" padding="16px">
-                Box03
-              </LBox>
+              <LSwitcher threshold="640px" space="24px" limit={3}>
+                <LBox backgroundColor="#ddd" padding="16px">
+                  Content1
+                </LBox>
+                <LBox backgroundColor="#ddd" padding="16px">
+                  Content2
+                </LBox>
+                <LBox backgroundColor="#ddd" padding="16px">
+                  Content3
+                </LBox>
+              </LSwitcher>
             </LStack>
           </LSidebar>
         </LStack>
