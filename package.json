@@ -37,16 +37,16 @@
     "react-dom": "17.0.2"
   },
   "peerDependencies": {
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "16.2.1",
+    "@commitlint/cli": "16.2.3",
     "@commitlint/config-conventional": "16.2.1",
     "@types/react": "17.0.40",
     "@types/react-dom": "17.0.13",
-    "@typescript-eslint/eslint-plugin": "5.14.0",
-    "@typescript-eslint/parser": "5.14.0",
+    "@typescript-eslint/eslint-plugin": "5.15.0",
+    "@typescript-eslint/parser": "5.15.0",
     "@vitejs/plugin-react": "1.2.0",
     "eslint": "7.32.0",
     "eslint-config-prettier": "8.5.0",
@@ -54,13 +54,13 @@
     "eslint-plugin-import": "2.25.4",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "5.2.0",
-    "eslint-plugin-react": "7.29.3",
+    "eslint-plugin-react": "7.29.4",
     "husky": "7.0.4",
-    "lint-staged": "12.3.5",
+    "lint-staged": "12.3.7",
     "postcss-jsx": "0.36.4",
-    "prettier": "2.5.1",
+    "prettier": "2.6.0",
     "rimraf": "3.0.2",
-    "stylelint": "14.5.3",
+    "stylelint": "14.6.0",
     "stylelint-config-prettier": "9.0.3",
     "stylelint-config-recess-order": "3.0.0",
     "stylelint-config-standard": "25.0.0",
@@ -77,6 +77,6 @@
     "lint": "npm run lint:script & npm run lint:style",
     "lint:script": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",
     "lint:style": "stylelint \"**/*.{css,jsx,tsx}\" --ignore-path .gitignore",
-    "format": "prettier \"**/*.{js,jsx,ts,tsx,css,json}\" --write"
+    "format": "prettier \"**/*.{js,jsx,ts,tsx,css,json}\" --write --ignore-path .gitignore"
   }
 }
