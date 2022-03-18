@@ -4,6 +4,7 @@ import {
   LBox,
   LCenter,
   LCluster,
+  LCover,
   LProvider,
   LSidebar,
   LStack,
@@ -17,8 +18,8 @@ import {
 export const App = () => {
   return (
     <LProvider>
-      <LCenter max="1200px" gutters="24px">
-        <LStack space="32px">
+      <LCover
+        header={
           <LCluster
             tag="header"
             justify="space-between"
@@ -45,7 +46,20 @@ export const App = () => {
               })()}
             </LCluster>
           </LCluster>
+        }
+        footer={
+          <p>
+            This library is based on{' '}
+            <a href="https://every-layout.dev/">Every Layout</a>.
+          </p>
+        }
+        space="40px"
+      >
+        <h1>Layout Primitive Components for React</h1>
+      </LCover>
 
+      <LCenter max="1200px" gutters="24px">
+        <LStack space="32px">
           <LSidebar side="left" sideWidth="240px" space="24px">
             <LStack space="24px">
               {(() => {
