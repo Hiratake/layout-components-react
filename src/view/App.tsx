@@ -7,6 +7,7 @@ import {
   LCover,
   LFrame,
   LGrid,
+  LIcon,
   LImposter,
   LProvider,
   LReel,
@@ -34,21 +35,56 @@ export const App = () => {
             <LBox>Layout Components</LBox>
             <LCluster tag="nav" space="8px">
               <LBox borderColor="#333" borderWidth="1px" padding="4px">
+                <LIcon space="8px" size="0.8em">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" />
+                  </svg>
+                </LIcon>
                 Layout
               </LBox>
               <LBox borderColor="#333" borderWidth="1px" padding="4px">
+                <LIcon space="8px" size="0.8em">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M2.53 19.65l1.34.56v-9.03l-2.43 5.86c-.41 1.02.08 2.19 1.09 2.61zm19.5-3.7L17.07 3.98c-.31-.75-1.04-1.21-1.81-1.23-.26 0-.53.04-.79.15L7.1 5.95c-.75.31-1.21 1.03-1.23 1.8-.01.27.04.54.15.8l4.96 11.97c.31.76 1.05 1.22 1.83 1.23.26 0 .52-.05.77-.15l7.36-3.05c1.02-.42 1.51-1.59 1.09-2.6zM7.88 8.75c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-2 11c0 1.1.9 2 2 2h1.45l-3.45-8.34v6.34z" />
+                  </svg>
+                </LIcon>
                 CSS
               </LBox>
               <LBox borderColor="#333" borderWidth="1px" padding="4px">
+                <LIcon space="8px" size="0.8em">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M18 4V3c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V6h1v4H9v11c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-9h8V4h-3z" />
+                  </svg>
+                </LIcon>
                 Web Design
               </LBox>
               <LBox borderColor="#333" borderWidth="1px" padding="4px">
+                <LIcon space="8px" size="0.8em">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
+                  </svg>
+                </LIcon>
                 Code
               </LBox>
               <LBox borderColor="#333" borderWidth="1px" padding="4px">
+                <LIcon space="8px" size="0.8em">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M20 3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h3l-1 1v2h12v-2l-1-1h3c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 13H4V5h16v11z" />
+                  </svg>
+                </LIcon>
                 Front-end
               </LBox>
               <LBox borderColor="#333" borderWidth="1px" padding="4px">
+                <LIcon space="8px" size="0.8em">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z" />
+                  </svg>
+                </LIcon>
                 Development
               </LBox>
             </LCluster>
