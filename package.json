@@ -31,6 +31,9 @@
     "type": "git",
     "url": "https://github.com/Hiratake/layout-components-react.git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "dependencies": {
     "@emotion/react": "11.8.2",
     "react": "17.0.2",
