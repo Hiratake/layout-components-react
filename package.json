@@ -73,6 +73,7 @@
   },
   "scripts": {
     "prepare": "husky install",
+    "prepublishOnly": "npm run build",
     "prebuild": "rimraf dist",
     "postbuild": "rimraf dist/types/view",
     "build": "tsc && vite build",
