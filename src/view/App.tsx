@@ -7,12 +7,14 @@ import {
   LCover,
   LFrame,
   LGrid,
+  LImposter,
   LProvider,
   LReel,
   LSidebar,
   LStack,
   LSwitcher,
 } from '../main'
+import { css } from '@emotion/react'
 
 // ----------------------------------------
 // JSX
@@ -261,10 +263,30 @@ export const App = () => {
                   </LStack>
                 </LBox>
               </LReel>
+
+              <div css={relativeContainer()}>
+                <LBox padding="40px" backgroundColor="#ddd">
+                  <LImposter>
+                    <LBox padding="16px" backgroundColor="#bbb">
+                      Imposter
+                    </LBox>
+                  </LImposter>
+                </LBox>
+              </div>
             </LStack>
           </LSidebar>
         </LStack>
       </LCenter>
     </LProvider>
   )
+}
+
+// ----------------------------------------
+// Style
+// ----------------------------------------
+
+const relativeContainer = () => {
+  return css`
+    position: relative;
+  `
 }
