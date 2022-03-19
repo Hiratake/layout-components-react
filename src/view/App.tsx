@@ -8,6 +8,7 @@ import {
   LFrame,
   LGrid,
   LProvider,
+  LReel,
   LSidebar,
   LStack,
   LSwitcher,
@@ -185,6 +186,81 @@ export const App = () => {
                   </LStack>
                 </LBox>
               </LGrid>
+
+              <LReel itemWidth="200px" space="24px">
+                <LBox borderColor="#333" borderWidth="1px" padding="16px">
+                  <LStack space="16px">
+                    <LFrame>
+                      <img
+                        src="https://user-images.githubusercontent.com/23224932/159027931-62f39bc9-4d4d-4288-b474-b84c7ad92cdd.jpg"
+                        alt=""
+                      />
+                    </LFrame>
+                    <h3>Grid1</h3>
+                    <p>Sample Text.</p>
+                  </LStack>
+                </LBox>
+                <LBox borderColor="#333" borderWidth="1px" padding="16px">
+                  <LStack space="16px">
+                    <LFrame>
+                      <img
+                        src="https://user-images.githubusercontent.com/23224932/159028063-5be96e59-5afa-48c6-9e47-4629a26a1dd1.jpg"
+                        alt=""
+                      />
+                    </LFrame>
+                    <h3>Grid2</h3>
+                    <p>Super Hyper Extreme Sample Text.</p>
+                  </LStack>
+                </LBox>
+                <LBox borderColor="#333" borderWidth="1px" padding="16px">
+                  <LStack space="16px">
+                    <LFrame>
+                      <img
+                        src="https://user-images.githubusercontent.com/23224932/159028204-01afb069-aaff-4498-bc6e-0c7582644809.jpg"
+                        alt=""
+                      />
+                    </LFrame>
+                    <h3>Grid3</h3>
+                    <p>Super Hyper Extreme Ultra Strongest Best Sample Text.</p>
+                  </LStack>
+                </LBox>
+                <LBox borderColor="#333" borderWidth="1px" padding="16px">
+                  <LStack space="16px">
+                    <LFrame>
+                      <img
+                        src="https://user-images.githubusercontent.com/23224932/159028244-b0b2dfe1-cba9-4617-8807-35e75148168a.jpg"
+                        alt=""
+                      />
+                    </LFrame>
+                    <h3>Grid4</h3>
+                    <p>Sample Text.</p>
+                  </LStack>
+                </LBox>
+                <LBox borderColor="#333" borderWidth="1px" padding="16px">
+                  <LStack space="16px">
+                    <LFrame>
+                      <img
+                        src="https://user-images.githubusercontent.com/23224932/159028280-f42f08f4-2c18-4517-bedc-9bcce168d5fc.jpg"
+                        alt=""
+                      />
+                    </LFrame>
+                    <h3>Grid5</h3>
+                    <p>Super Hyper Sample Text.</p>
+                  </LStack>
+                </LBox>
+                <LBox borderColor="#333" borderWidth="1px" padding="16px">
+                  <LStack space="16px">
+                    <LFrame>
+                      <img
+                        src="https://user-images.githubusercontent.com/23224932/159028328-6212b278-8aa0-4d6e-9ae9-848fd2c7d973.jpg"
+                        alt=""
+                      />
+                    </LFrame>
+                    <h3>Grid6</h3>
+                    <p>Super Hyper Extreme Ultra Strongest Sample Text.</p>
+                  </LStack>
+                </LBox>
+              </LReel>
             </LStack>
           </LSidebar>
         </LStack>
