@@ -1,6 +1,13 @@
 // LStack
 
-import { CSSProperties, ElementType, ReactNode } from 'react'
+import {
+  CSSProperties,
+  ElementType,
+  ReactNode,
+  useEffect,
+  useRef,
+  useState,
+} from 'react'
 import { css } from '@emotion/react'
 
 // ----------------------------------------
@@ -26,7 +33,27 @@ export type LayoutStackProps = {
 
 export const LStack = (props: LayoutStackProps) => {
   const ComponentTag = props.tag || 'div'
-  return <ComponentTag css={rootStyle(props)}>{props.children}</ComponentTag>
+  const [splitAfter, setSplitAfter] = useState<number>(0)
+  const [splitAfterTag, setSplitAfterTag] = useState<string>('')
+  const stackRef = useRef<HTMLElement>(null)
+  useEffect(() => {
+    if (props.children && props.splitAfter && stackRef.current) {
+      const children = Array.from(stackRef.current.children)
+        .filter((element) => element.tagName.toLocaleLowerCase() !== 'style')
+        .slice(0, props.splitAfter)
+        .map((element) => element.tagName.toLocaleLowerCase())
+      setSplitAfterTag(children[children.length - 1])
+      setSplitAfter(children.filter((item) => item === splitAfterTag).length)
+    }
+  })
+  return (
+    <ComponentTag
+      ref={stackRef}
+      css={[rootStyle(props), splitAfterStyle(splitAfter, splitAfterTag)]}
+    >
+      {props.children}
+    </ComponentTag>
+  )
 }
 
 // ----------------------------------------
@@ -42,21 +69,19 @@ const rootStyle = (props: LayoutStackProps) => {
     & ${props.recursive ? '' : '>'} * + * {
       margin-block-start: ${props.space};
     }
-
-    ${props.splitAfter && splitAfterStyle(props.splitAfter)}
   `
 }
 
-const splitAfterStyle = (
-  splitAfter: Required<LayoutStackProps>['splitAfter']
-) => {
-  return css`
-    &:only-child {
-      block-size: 100%;
-    }
+const splitAfterStyle = (splitAfter: number, tagName: string) => {
+  if (splitAfter && tagName) {
+    return css`
+      &:only-child {
+        block-size: 100%;
+      }
 
-    & > *:nth-of-type(${splitAfter}) {
-      margin-block-end: auto;
-    }
-  `
+      & > ${tagName}:nth-of-type(${splitAfter}) {
+        margin-block-end: auto;
+      }
+    `
+  }
 }
