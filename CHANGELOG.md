@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/Hiratake/layout-components-react/compare/v1.0.3...v1.0.4) (2022-07-25)
+
+
+### Bug Fixes
+
+* **deps:** reactを18に更新 ([a4affd5](https://github.com/Hiratake/layout-components-react/commit/a4affd523848bb2c7098ac674ce8df29e1096714))
+
 ## [1.0.3](https://github.com/Hiratake/layout-components-react/compare/v1.0.2...v1.0.3) (2022-07-18)
 
 
