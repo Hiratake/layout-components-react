@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/Hiratake/layout-components-react/compare/v1.0.8...v1.0.9) (2023-05-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @emotion/react to v11.11.0 ([a0916c0](https://github.com/Hiratake/layout-components-react/commit/a0916c07efb74dec12839e97a5edc60e11f9ea39))
+
 ## [1.0.8](https://github.com/Hiratake/layout-components-react/compare/v1.0.7...v1.0.8) (2023-03-20)
 
 
